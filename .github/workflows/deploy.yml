@@ -20,8 +20,8 @@ jobs:
 
       - name: Build and Push Docker Image
         run: |
-          docker build -t steven0707/flaskapp:${{ github.sha }} .
-          docker push steven0707/flaskapp:${{ github.sha }}
+          docker build -t stanes22/flaskapp:${{ github.sha }} .
+          docker push stanes22/flaskapp:${{ github.sha }}
 
       - name: Start Minikube
         run: |
